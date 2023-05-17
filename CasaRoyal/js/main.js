@@ -114,10 +114,10 @@ const renderHouses = (houses) => {
   SecCards.innerHTML = "";
   if (houses.length != 0) {
     houses.forEach((house) => {
-      SecCards.innerHTML += ` <figure class="card radius" id="${house.id}">
+      SecCards.innerHTML += ` <figure class="card radius" >
           <section class="Img__house" style="background: url(${
             house.url
-          }) ;background-size: cover">
+          }) ;background-size: cover" id="${house.id}">
             <div class="labels__cards">
               <h3 class="labelBlue radius">HOUSE</h3>
               <h3 class="radius ${
@@ -252,7 +252,7 @@ SecCards.addEventListener("click", (e) => {
     modal.classList.add("animate__fadeIn");
     CardEnModal.classList.add("animate__bounceInDown");
 
-    let housemodal = houses.filter((item) => item.id == e.path[1].id);
+    let housemodal = houses.filter((item) => item.id == e.target.id);
     housemodal.forEach((item) => {
       imgModal.src = item.url;
       h2Modal.textContent = item.place;
