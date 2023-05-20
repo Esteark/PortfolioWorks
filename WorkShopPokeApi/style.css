@@ -1,0 +1,343 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --lightGray: #e3dfde;
+  --purple: #9350b1;
+  --lightPurple: #f8e4f5;
+}
+
+body {
+  background-color: var(--lightGray);
+  padding: 25px;
+  width: 100%;
+  height: 100vh;
+}
+
+.encabezado {
+  background-color: var(--purple);
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  gap: 15px;
+  border-radius: 15px 15px 0 0;
+}
+
+.encabezado figure img {
+  width: 50px;
+}
+.encabezado h2 {
+  color: white;
+  text-transform: uppercase;
+}
+#txtfilter {
+  background-color: #fff;
+  height: 40px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  padding: 0 30px;
+  border: 1px solid mediumorchid;
+  text-align: center;
+}
+#txtfilter:focus {
+  outline: 1px solid maroon;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+}
+#btnFiltro {
+  background-color: rgb(255, 116, 116);
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+#btnFiltro:hover {
+  background-color: #fff;
+  color: #000;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  cursor: pointer;
+}
+
+#btnclear {
+  padding: 10px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border: none;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+#btnclear:hover {
+  cursor: pointer;
+  background-color: #e3dfde;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  gap: 40px;
+  background-color: var(--lightPurple);
+}
+
+.charizard-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 20px;
+}
+
+.title {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 5px;
+  border-radius: 15px;
+}
+
+.title figure img {
+  width: 50px;
+  height: 50px;
+}
+
+.image-charizard {
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+}
+
+.image-charizard img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.info-pokemon {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 25px;
+  border-radius: 15px;
+  width: 40%;
+  gap: 20px;
+  min-height: 50vh;
+}
+
+.row-info {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.title-info {
+  font-size: 20px;
+}
+
+.info-text {
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+#typePoke,
+#abilityPoke {
+  font-size: 18px;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  background-color: white;
+  border-radius: 0 0 15px 15px;
+}
+
+.footer-content figure img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.footer-content figure {
+  padding: 15px;
+  background-color: var(--lightPurple);
+  border-radius: 10px;
+  margin: 10px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.footer-content figure:hover {
+  cursor: pointer;
+  background-color: var(--purple);
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.footer-content div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+  width: 65%;
+}
+
+.footer-content .btn_next {
+  width: 50px;
+  height: 50px;
+  background: url(./img/next.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer-content .btn_prev {
+  width: 50px;
+  height: 50px;
+  background: url(./img/back.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* estilos para el modal de carga  */
+
+.modalCard {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 223, 217, 0.8968837535014006) 24%,
+    rgba(255, 232, 232, 1) 71%
+  );
+  position: fixed;
+  z-index: 10;
+}
+
+.modalCard .Card {
+  width: 220px;
+  height: 220px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  gap: 10px;
+}
+
+.modalCard .Card figure {
+  width: 60px;
+  height: 60px;
+}
+
+.modalCard .Card figure img {
+  width: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 767.98px) {
+  .encabezado {
+    justify-content: center;
+  }
+  .encabezado .pokeball {
+    display: none;
+  }
+  .encabezado h2 {
+    display: none;
+  }
+  .encabezado .charizard-baby {
+    display: none;
+  }
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .charizard-container {
+    width: 90%;
+    z-index: 2;
+  }
+  .info-pokemon {
+    width: 85%;
+    height: 60vh;
+    transform: translateY(-100px);
+  }
+  #txtfilter {
+    padding: 0;
+    width: 150px;
+  }
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .footer-content h3 {
+    display: none;
+  }
+  .footer-content div {
+    justify-content: center;
+  }
+  #typePoke,
+  #abilityPoke {
+    font-size: 15px;
+  }
+
+  .footer-content .btn_next {
+    background: url(./img/down.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .footer-content .btn_prev {
+    background: url(./img/up.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Snap</title>
+  </head>
+  <body>
+    <!-- comienza header pag  -->
+    <nav class="nav">
+      <figure class="nav__logo padding-nav">
+        <img src="img/logo.svg" class="nav__img" alt="" />
+      </figure>
+      <figure class="nav__iconMenu padding-nav">
+        <img src="img/icon-menu.svg" alt="" />
+      </figure>
+      <div class="nav__navigation menuscroll animate__animated">
+        <ul class="nav__ul animate__animated">
+          <div class="nav_Contentnav">
+            <figure id="btnCloseMenu">
+              <img src="img/icon-close-menu.svg" alt="" />
+            </figure>
+            <li id="btnfeatures">
+              Features <img src="img/icon-arrow-down.svg" alt="" />
+            </li>
+            <div class="nav__itemFeatures animate__animated hidden">
+              <li><img src="img/icon-todo.svg" alt="" />Todo List</li>
+              <li><img src="img/icon-calendar.svg" alt="" />Calendar</li>
+              <li><img src="img/icon-reminders.svg" alt="" />Reminders</li>
+              <li><img src="img/icon-planning.svg" alt="" />Planning</li>
+            </div>
+            <li id="btncompany">
+              Company <img src="img/icon-arrow-down.svg" alt="" />
+            </li>
+            <div class="nav__itemCompany animate__animated hidden">
+              <li>History</li>
+              <li>Our Team</li>
+              <li>Blog</li>
+            </div>
+            <li>Careers</li>
+            <li>About</li>
+          </div>
+          <div class="nav__buttons">
+            <button>Login</button>
+            <button class="nav__btnregister">Register</button>
+          </div>
+        </ul>
+      </div>
+    </nav>
+    <header>
+      <section class="header__main">
+        <article class="header__main__left">
+          <h1>Make<span>remote work</span></h1>
+          <p>
+            Get your team in sync, no matter you location. <br />
+            Streamline processes, create team rituals, and watch productivity
+            soar
+          </p>
+
+          <button>Learn more</button>
+
+          <figure>
+            <img src="./img/client-databiz.svg" alt="databiz" />
+            <img src="./img/client-audiophile.svg" alt="audiophile" />
+            <img src="./img/client-meet.svg" alt="meet" />
+            <img src="./img/client-maker.svg" alt="maker" />
+          </figure>
+        </article>
+        <article class="header__main__right">
+          <figure>
+            <img src="./img/image-hero-desktop.png" alt="img__desktop" />
+          </figure>
+        </article>
+      </section>
+    </header>
+    <script src="main.js" type="text/javascript"></script>
+  </body>
+</html>
